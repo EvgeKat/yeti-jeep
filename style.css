@@ -11,13 +11,12 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   margin: 0 auto;
-  padding-top: 20px;
-  /*background: url(assets/dombay.png);
-  background-repeat: no-repeat;*/
+  background-image: url(assets/clouds.png), url(assets/dombay.png);
+  background-repeat: no-repeat;
 }
 
 header {
-  /* background: url(assets/dombay.png);*/
+  padding-top: 20px;
 }
 
 .header--icon {
@@ -43,8 +42,6 @@ header {
   border-color: #ffedcb #fabc5f;
   background-color: #ffffff;
   font-family: "Manrope", sans-serif;
-  /*border: 1px solid;
- border-image-source: radial-gradient(100.13% 100% at 50.15% 0%, #FFEDCB 0%, #FABC5F 100%);*/
 }
 
 .number {
@@ -159,6 +156,9 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 115px;
+  background-image: url(assets/car.png);
+  background-repeat: no-repeat;
+  background-position: 0 -65px;
 }
 
 .block-two--food {
@@ -211,8 +211,10 @@ header {
 
 .block-three {
   font-size: 16px;
-  width: 270px;
-  height: 936px;
+  /*width: 290px;
+  height: 936px;*/
+  width: 90%;
+  padding-bottom: 50px;
   background-color: #ffffff;
   margin-top: 45px;
   margin-left: 15px;
@@ -243,6 +245,12 @@ input {
 
 .input {
   line-height: 24px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.mountains {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .block-three--button {
@@ -264,4 +272,6 @@ input {
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: #000 15%;
+  margin-left: 20px;
+  margin-top: 20px;
 }
