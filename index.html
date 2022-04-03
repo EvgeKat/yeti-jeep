@@ -11,96 +11,147 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="body">
     <header>
-      <div>
+      <div class="header--icon">
         <div>
           <img src="assets/yeti.png" alt="yeti" />
         </div>
-        <a href=""><img src="assets/watsapp.svg" alt="watsapp" /></a>
-        <a href=""><img src="assets/telegramm.svg" alt="telegramm" /></a>
-        <a href=""><img src="assets/insta.svg" alt="insta" /></a>
+
+        <div>
+          <a href=""><img src="assets/watsapp.svg" alt="watsapp" /></a>
+          <a href=""><img src="assets/telegramm.svg" alt="telegramm" /></a>
+          <a href=""><img src="assets/insta.svg" alt="insta" /></a>
+        </div>
+
         <div class="hamburger" id="hamburger-icon">
           <span class="line line1"></span>
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
+      </div>
 
-        <div>
-          <button>Заказать звонок</button>
-          <div>+7 (906) 499 99 94</div>
-        </div>
+      <div class="header--number">
+        <button class="header--button">Заказать звонок</button>
+        <p class="number">+7 (906) 499 99 94</p>
       </div>
     </header>
 
     <main>
       <section></section>
 
-      <section>
-        <span
-          >Хотите сменить обстановку и отдохнуть душой среди гор и
-          водопадов?</span
+      <section class="block-one">
+        <span class="block-one--question"
+          >Хотите сменить обстановку<br />
+          и
+          <b>
+            отдохнуть душой<br />
+            среди гор и водопадов?</b
+          ></span
         >
-        <span
-          >Ответьте на несколько вопросов и получите онлайн расчет тура по
-          Кавказу на современном комфортабельном внедорожнике</span
+        <span class="block-one--text"
+          >Ответьте на несколько вопросов<br />
+          и получите онлайн расчет<br />
+          тура по Кавказу на современном<br />
+          комфортабельном внедорожнике</span
         >
-        <button>подобрать маршрут и узнать стоимость</button>
+        <button class="block-one--button">
+          подобрать маршрут<br />
+          и узнать стоимость
+        </button>
 
-        <div>+ Вы получите гайд “Как сэкономить на путешествии”</div>
+        <div class="block-one--gaid">
+          <span class="gaid-ogange">+ Вы получите гайд </span><br />
+          <span class="gaid-brown">“Как сэкономить на путешествии”</span>
+        </div>
       </section>
 
-      <section>
-        <div>
-          <div>
+      <section class="block-two">
+        <div class="block-two--food">
+          <div class="food--text">
             <img src="assets/food.svg" alt="food" />
+            <div>
+              Обед <br />
+              включен
+            </div>
           </div>
-          <span>Обед включен</span>
         </div>
-        <div>
-          <div>
+
+        <div class="block-two--group">
+          <div class="group--text">
             <img src="assets/group.svg" alt="group" />
+            <div>
+              Быстрый <br />
+              возврат денег
+            </div>
           </div>
-          <span>Быстрый возврат денег</span>
         </div>
-        <div>
-          <div>
+
+        <div class="block-two--fam">
+          <div class="fam--text">
             <img src="assets/fam.svg" alt="fam" />
+            <div class="group--texts">
+              Для любого возраста: <br />
+              можно отдыхать семьей
+            </div>
           </div>
-          <span>Для любого возраста: можно отдыхать семьей</span>
         </div>
-        <div>
-          <div>
+
+        <div class="block-two--time">
+          <div class="time--text">
             <img src="assets/time.svg" alt="time" />
+            <div class="group--texts">
+              Время тура не ограничено <br />
+              жесткими рамками
+            </div>
           </div>
-          <span>Время тура не ограничено жесткими рамками</span>
         </div>
-        <div>
-          <div>
+
+        <div class="block-two--programm">
+          <div class="programm--text">
             <img src="assets/programm.svg" alt="programm" />
+            <div class="group--texts">
+              Программу тура можно <br />
+              изменить по желанию гостей
+            </div>
           </div>
-          <span>Программу тура можно изменить по желанию гостей</span>
         </div>
       </section>
 
-      <section>
+      <section class="block-three">
         <div>
-          <p>
+          <p class="block-three--text">
             Пройдите короткий тест и получите индивидуальное предложение по туру
           </p>
-          <p>Какие достопримечательности Вас интересуют больше всего?</p>
-          <input type="checkbox" name="waterfalls" /> Водопады<br />
-          <input type="checkbox" name="mountain-lakes" /> Горные озера<br />
-          <input type="checkbox" name="waterfalls" /> Панорамные смотровые на
-          Эльбрус<br />
-          <input type="checkbox" name="monuments" /> Исторические памятники<br />
-          <input type="checkbox" name="temples " /> Храмы и места Силы<br />
-          <input type="checkbox" name="all" /> Интересно все<br />
+          <p class="block-three--question">
+            <b
+              >Какие<br />
+              достопримечательности</b
+            ><br />
+            Вас интересуют больше<br />
+            всего?
+          </p>
+          <div class="input">
+            <input type="checkbox" name="waterfalls" /> Водопады<br />
+            <input type="checkbox" name="mountain-lakes" /> Горные озера<br />
+            <input type="checkbox" name="waterfalls" /> Панорамные смотровые
+            <br />
+            на Эльбрус<br />
+            <input type="checkbox" name="monuments" /> Исторические памятники<br />
+            <input type="checkbox" name="temples " /> Храмы и места Силы<br />
+            <input type="checkbox" name="all" /> Интересно все<br />
+          </div>
+          <img src="assets/mountains.jpg" alt="mountains" />
+          <button class="block-three--button">Далее</button>
         </div>
-        <img src="assets/mountains.jpg" alt="mountains" />
-        <button>Далее</button>
       </section>
     </main>
   </body>

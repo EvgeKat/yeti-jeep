@@ -1,0 +1,267 @@
+html {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding-top: 20px;
+  /*background: url(assets/dombay.png);
+  background-repeat: no-repeat;*/
+}
+
+header {
+  /* background: url(assets/dombay.png);*/
+}
+
+.header--icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header--number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header--button {
+  width: 135px;
+  height: 40px;
+  border-radius: 30px;
+  border-color: #ffedcb #fabc5f;
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  /*border: 1px solid;
+ border-image-source: radial-gradient(100.13% 100% at 50.15% 0%, #FFEDCB 0%, #FABC5F 100%);*/
+}
+
+.number {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.hamburger .line {
+  width: 18px;
+  height: 3px;
+  background: #464646;
+  transition: all 0.3s ease-in-out;
+  margin: 3px 0;
+  z-index: 15;
+}
+
+.hamburger.open .line1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.open .line2 {
+  opacity: 0;
+  opacity: 0;
+}
+
+.hamburger.open .line3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.block-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.block-one--question {
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 36px;
+  color: #342100;
+  text-transform: uppercase;
+}
+
+.block-one--text {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  padding-right: 30px;
+}
+
+.block-one--gaid {
+  width: 320px;
+  height: 65px;
+  background: #ffffffcc;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.gaid-ogange {
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: #fabc5f;
+}
+
+.gaid-brown {
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: #392502;
+}
+
+.block-one--button {
+  width: 290px;
+  height: 70px;
+  border-radius: 100px;
+  background: radial-gradient(
+    100.13% 100% at 50.11% 0%,
+    #ffebc6 0%,
+    #efab33 100%
+  );
+  box-shadow: 0px 4px 0px 0px #d3a854;
+  border: rgba(255, 255, 255, 0.15);
+  font-family: "Manrope", sans-serif;
+  color: #464646;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: #000 15%;
+}
+
+.block-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 115px;
+}
+
+.block-two--food {
+  width: 135px;
+  height: 120px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.block-two--group {
+  width: 135px;
+  height: 120px;
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.block-two--fam,
+.block-two--time,
+.block-two--programm {
+  width: 290px;
+  height: 78px;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.food--text,
+.group--text {
+  font-size: 14px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.fam--text,
+.time--text,
+.programm--text {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.group--texts {
+  padding-left: 15px;
+}
+
+.block-three {
+  font-size: 16px;
+  width: 270px;
+  height: 936px;
+  background-color: #ffffff;
+  margin-top: 45px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.block-three--text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fabd61;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.block-three--question {
+  font-family: Oswald;
+  font-size: 22px;
+  line-height: 33px;
+  color: #342100;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+}
+
+.input {
+  line-height: 24px;
+}
+
+.block-three--button {
+  width: 251px;
+  height: 60px;
+  border-radius: 100px;
+  background: radial-gradient(
+    100.13% 100% at 50.11% 0%,
+    #ffebc6 0%,
+    #efab33 100%
+  );
+  border: 1px solid #ffffff26;
+  box-shadow: 0px 4px 0px 0px #d3a854;
+  box-shadow: 0px 4px 20px 0px #ffdaa080;
+  font-family: "Manrope", sans-serif;
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: #000 15%;
+}
