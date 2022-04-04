@@ -13,19 +13,32 @@ body {
   margin: 0 auto;
   background-image: url(assets/clouds.png), url(assets/dombay.png);
   background-repeat: no-repeat;
+  background-size: 100% 40%;
+  margin-bottom: 20%;
 }
 
 header {
+  /*padding-top: 20px;*/
+}
+
+.header {
+  margin: 0 auto;
   padding-top: 20px;
 }
 
-.header--icon {
+/*.header--icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}*/
+
+.header--all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .header--number {
@@ -48,6 +61,7 @@ header {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+  padding-left: 10px;
 }
 
 .hamburger {
@@ -85,6 +99,12 @@ header {
   transform: rotate(45deg) translate(-6px, -6px);
 }
 
+main {
+  background-image: url(assets/car.png);
+  background-repeat: no-repeat;
+  background-position: 120% 23%;
+}
+
 .block-one {
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +118,7 @@ header {
   line-height: 36px;
   color: #342100;
   text-transform: uppercase;
+  padding-left: 7%;
 }
 
 .block-one--text {
@@ -106,6 +127,7 @@ header {
   padding-top: 15px;
   padding-bottom: 35px;
   padding-right: 30px;
+  padding-left: 7%;
 }
 
 .block-one--gaid {
@@ -156,9 +178,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 115px;
-  background-image: url(assets/car.png);
-  background-repeat: no-repeat;
-  background-position: 0 -65px;
 }
 
 .block-two--food {
@@ -217,8 +236,12 @@ header {
   padding-bottom: 50px;
   background-color: #ffffff;
   margin-top: 45px;
-  margin-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
+}
+.header--none {
+  display: none;
 }
 
 .block-three--text {
@@ -227,6 +250,7 @@ header {
   color: #fabd61;
   padding-top: 40px;
   padding-left: 10px;
+  padding-right: 5px;
 }
 
 .block-three--question {
@@ -248,9 +272,10 @@ input {
   padding-left: 25px;
   padding-bottom: 15px;
 }
+
 .mountains {
   margin-left: 10px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
 .block-three--button {
@@ -274,4 +299,328 @@ input {
   text-shadow: #000 15%;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+@media (min-width: 414px) {
+  .block-three--container {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .header {
+    width: 80%;
+  }
+
+  .block-two--food,
+  .block-two--group {
+    width: calc(135px + 1em);
+  }
+
+  .block-two--fam,
+  .block-two--programm,
+  .block-two--time {
+    width: calc(290px + 2em);
+  }
+}
+
+@media (min-width: 568px) {
+  .header--all {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .block-three--container {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+
+  .block-one {
+    margin: 0 20%;
+  }
+
+  .block-two {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    background-image: url(assets/carLarge.png);
+    background-repeat: no-repeat;
+    background-position: 160% 25%;
+    background-size: 80%;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .header--all {
+    width: 100%;
+    align-items: center;
+  }
+
+  .header--button {
+    order: 2;
+  }
+
+  .number {
+    order: 1;
+    padding-right: 20px;
+  }
+
+  .hamburger {
+    order: 5;
+  }
+
+  .block-two {
+    margin: 0 20%;
+  }
+
+  .block-three--container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .block-three--question {
+    padding-bottom: 30px;
+  }
+
+  .mountains {
+    width: 45%;
+    height: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url(assets/cloudsLarge.png), url(assets/dombayLarge.png);
+    background-size: auto;
+  }
+
+  main {
+    background-position: 120% 21.5%;
+    background-size: 70%;
+  }
+
+  .block-one {
+    justify-content: left;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-left: 10%;
+  }
+
+  .block-two {
+    margin: 0 25%;
+  }
+
+  .block-one--text,
+  .block-one--question {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(assets/cloudsLarge.png), url(assets/dombayLarge.png);
+    background-size: 100% 40%;
+  }
+
+  main {
+    background-image: url(assets/trees.png), url(assets/carLarge.png);
+    background-repeat: no-repeat;
+    background-position: 100% 25%, 100% 10%;
+    background-size: 20%, 65%;
+  }
+
+  .header {
+    width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .header--none {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  /*.number {
+    color: #efab33;
+  }*/
+
+  .header--yeti {
+    display: contents;
+  }
+
+  .block-two {
+    margin: 0;
+    padding-top: 30px;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .block-two--food {
+    width: 155px;
+    height: 134px;
+  }
+
+  .block-two--group {
+    width: 155px;
+    height: 134px;
+    order: 5;
+  }
+
+  .block-two--fam {
+    width: 233px;
+    height: 106px;
+  }
+
+  .block-two--time {
+    width: 245px;
+    height: 106px;
+  }
+
+  .block-two--programm {
+    width: 269px;
+    height: 106px;
+  }
+
+  .block-three {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    background-position: 100% 28%, 120% 15%;
+  }
+
+  .header {
+    width: 80%;
+  }
+
+  .block-one {
+    margin: 0 10%;
+    padding-top: 90px;
+  }
+
+  .block-one--question {
+    width: 65%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+
+  .block-one--text {
+    width: 55%;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .block-three--text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .block-three--question {
+    font-size: 38px;
+    line-height: 56px;
+  }
+
+  .block-three--button {
+    width: 231px;
+    font-size: 16px;
+  }
+
+  .mountains {
+    width: 430px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1505px) {
+  .block-three {
+    width: 75%;
+  }
+
+  .input {
+    padding: 0 10%;
+  }
+
+  .block-three--button {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 1700px) {
+  main {
+    background-position: 100% 25%, 100% 7%;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-size: 100% 50%;
+  }
+
+  main {
+    background-position: 95% 36%, 80% 18%;
+  }
+
+  .header {
+    width: calc(100% - 38%);
+  }
+
+  .block-one {
+    width: calc(100% - 38%);
+    margin: 0 auto;
+  }
+
+  .block-one--button {
+    width: 334px;
+    height: 80px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .block-two {
+    width: calc(100% - 38%);
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  .block-three {
+    width: calc(100% - 38%);
+  }
+
+  .block-three--container {
+    padding-left: 90px;
+  }
+
+  .block-three--text {
+    padding-top: 40px;
+  }
+
+  .block-three--question {
+    margin: 0;
+    padding: 0;
+    padding-right: 350px;
+    padding-bottom: 40px;
+  }
+
+  .input {
+    padding-left: 45px;
+    padding-bottom: 10px;
+  }
+
+  .mountains {
+  }
 }
