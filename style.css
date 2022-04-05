@@ -17,23 +17,10 @@ body {
   margin-bottom: 20%;
 }
 
-header {
-  /*padding-top: 20px;*/
-}
-
 .header {
   margin: 0 auto;
   padding-top: 20px;
 }
-
-/*.header--icon {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}*/
 
 .header--all {
   display: flex;
@@ -187,6 +174,7 @@ main {
   margin-right: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+  clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%);
 }
 
 .block-two--group {
@@ -196,6 +184,7 @@ main {
   margin-left: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+  clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .block-two--fam,
@@ -230,8 +219,6 @@ main {
 
 .block-three {
   font-size: 16px;
-  /*width: 290px;
-  height: 936px;*/
   width: 90%;
   padding-bottom: 50px;
   background-color: #ffffff;
@@ -275,7 +262,6 @@ input {
 
 .mountains {
   margin-left: 10px;
-  /*margin-top: 10px;*/
 }
 
 .block-three--button {
@@ -299,6 +285,14 @@ input {
   text-shadow: #000 15%;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+.pulse:hover,
+.pulse:focus {
+  cursor: pointer;
+  box-shadow: 0 0 0 1em rgba(255, 218, 160, 0.5);
+  animation: pulse 1s;
+  transition: all 2s ease;
 }
 
 @media (min-width: 414px) {
@@ -404,8 +398,10 @@ input {
   }
 
   main {
-    background-position: 120% 21.5%;
-    background-size: 70%;
+    background-image: url(assets/trees.png), url(assets/carLarge.png);
+    background-repeat: no-repeat;
+    background-position: 100% 34.5%, 115% 25%;
+    background-size: 20%, 70%;
   }
 
   .block-one {
@@ -416,7 +412,21 @@ input {
   }
 
   .block-two {
-    margin: 0 25%;
+    margin: 0 10%;
+    align-items: flex-end;
+  }
+
+  .block-two--group {
+    order: 3;
+  }
+  .block-two--fam {
+    order: 2;
+  }
+  .block-two--time {
+    order: 4;
+  }
+  .block-two--programm {
+    order: 5;
   }
 
   .block-one--text,
@@ -432,8 +442,6 @@ input {
   }
 
   main {
-    background-image: url(assets/trees.png), url(assets/carLarge.png);
-    background-repeat: no-repeat;
     background-position: 100% 25%, 100% 10%;
     background-size: 20%, 65%;
   }
@@ -450,10 +458,6 @@ input {
     line-height: 20px;
     font-weight: 400;
   }
-
-  /*.number {
-    color: #efab33;
-  }*/
 
   .header--yeti {
     display: contents;
@@ -491,10 +495,16 @@ input {
   .block-two--programm {
     width: 269px;
     height: 106px;
+    order: 4;
   }
 
   .block-three {
     width: 80%;
+  }
+  .fam--text,
+  .time--text,
+  .programm--text {
+    padding-top: 40px;
   }
 }
 
@@ -546,6 +556,11 @@ input {
 }
 
 @media (min-width: 1505px) {
+  .block-two {
+    margin: 0 10%;
+    justify-content: space-around;
+  }
+
   .block-three {
     width: 75%;
   }
@@ -619,8 +634,5 @@ input {
   .input {
     padding-left: 45px;
     padding-bottom: 10px;
-  }
-
-  .mountains {
   }
 }
